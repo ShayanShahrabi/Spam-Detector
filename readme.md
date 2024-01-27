@@ -62,4 +62,4 @@ There are 2 files in the repo:
 So you can run which ever you like, the results are totally the same.
 
 ## Acknowledgemnts
-I would like to express my heartfelt appreciation to my friend [Nima HeydariNasab](https://github.com/nimah79?tab=overview&from=2018-12-01&to=2018-12-31) for not only providing invaluable support and expertise but also for sharing the essential data files that were instrumental in the completion of this project.
+I would like to express my appreciation to my friend [Nima HeydariNasab](https://github.com/nimah79?tab=overview&from=2018-12-01&to=2018-12-31) for not only providing invaluable support but also for sharing the essential data files that were instrumental in the completion of this project.
