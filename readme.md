@@ -1,10 +1,3 @@
-## Introduction
-A simple **Bayes classifier** is a group of probabilistic classifiers that usually have acceptable accuracy. This method is based on **independent events** and **Bayes theorem**. 
-
-## Project Details
-This program is an implementation of the technique mentioned above. So through analyzing SMS data with spam and non-spam labels (which is provided in the `train_data.txt` file), it will predict whether each SMS provided in the `sample_test_data.txt` file is spam or not.
-
-
 # Simple Naive Bayes Classifier
 The Simple Naive Bayes Classifier is a group of classifiers based on probabilities that usually have acceptable accuracy. This method is based on independent events and the Bayes theorem. In this project, we intend to write a program that receives data consisting of spam and non-spam messages, as well as a list of anonymous messages, and determines whether the anonymous messages are spam or not.
 
@@ -20,7 +13,7 @@ For message classification, we have two categories:
 
 The simple Naive Bayes method calculates the probability of a message belonging to each of these categories. Finally, we choose the category with the highest probability as the final category.
 
-If the message text contains n unique words named w1 to wn (repeated words may exist), the probability of the message belonging to the spam category is calculated as follows:
+If the message text contains n unique words named $w_1$ to $w_n$ (repeated words may exist), the probability of the message belonging to the spam category is calculated as follows:
 
 $$ 
 P(spam|w_1,w_2,...,w_n) = P(spam) * \prod_{i=1}^{n} P(w_i|spam)
@@ -46,25 +39,26 @@ In the above equation:
 
 The above equations hold similarly for the ham category.
 
-## Running the Program
+## How the Program Works
 
-Implement the program in a file named `spam_detector.py`. The program should be executed as follows:
-
-```
-python spam_detector.py train_data_filepath test_data_filepath output_filepath
-```
-
-The program should read the training and test data from the specified file paths and write the output to the specified file path.
+The program reads the training and test data from the specified file paths and writes the output to the specified file path.
 
 Additionally, the output file format should be similar to the training data.
 
 ## Notes
+- The scoring criteria were as following:
+  - If the model accuracy is at least 60%, the code receives one-third of the score.
+  - If the model accuracy is at least 80%, the code receives two-thirds of the score.
+  - If the model accuracy is at least 90%, the code receives the full score.
 
-- To clean the words, it is sufficient to remove non-alphabetic characters from the messages using the regular expression `\W+`.
-- The scoring criteria are as follows:
-  - If the model accuracy is at least 60%, you will receive one-third of the score.
-  - If the model accuracy is at least 80%, you will receive two-thirds of the score.
-  - If the model accuracy is at least 90%, you will receive the full score.
+(The implementation in the `main-notebook.ipynb` file avhieved a sacore of 100 / 100)
+
+## How to run the code?
+There are 2 files in the repo:
+- `main-notebook.ipynb` which contains explanatoins and the code itself
+- `spam_detectos.py` which only contains the code (the exact code is used in the jupyter notebook)
+
+So you can run which ever you like, the results are totally the same.
 
 ## Acknowledgemnts
 I would like to express my heartfelt appreciation to my friend [Nima HeydariNasab](https://github.com/nimah79?tab=overview&from=2018-12-01&to=2018-12-31) for not only providing invaluable support and expertise but also for sharing the essential data files that were instrumental in the completion of this project.
