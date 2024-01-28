@@ -1,6 +1,7 @@
 # Simple Naive Bayes Classifier
-The Simple Naive Bayes Classifier is a group of classifiers based on probabilities that usually have acceptable accuracy. This method is based on independent events and the Bayes theorem. In this project, we intend to write a program that receives data consisting of spam and non-spam messages, as well as a list of anonymous messages, and determines whether the anonymous messages are spam or not.
+The Simple Naive Bayes Classifier is a group of classifiers based on probabilities that usually have acceptable accuracy. This method is based on independent events and the Bayes theorem. 
 
+In this project the program receives data consisting of spam and non-spam messages, as well as a list of anonymous messages, and determines whether the anonymous messages are spam or not.
 
 The training data consists of two columns separated by a tab character. The first column is the message label, which can have the values "spam" or "ham" (indicating whether the message is spam or not). The second column is the message text. It is guaranteed that the message text does not contain any tab characters.
 
